@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaden Zhu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' ry='16' fill='%235c3b8a'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='52' font-family='Oswald' fill='white'%3EKZ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="bg-shapes" aria-hidden="true">
+        <span class="shape circle s1"></span>
+        <span class="shape square s2"></span>
+        <span class="shape triangle s3"></span>
+        <span class="shape circle s4"></span>
+        <span class="shape square s5"></span>
+        <span class="shape triangle s6"></span>
+    </div>
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar"><img src="IMG_0945.png" alt="Kaden Zhu portrait"></div>
+            <div class="name">Kaden Zhu</div>
+            <div class="subtitle">Los Angeles, CA</div>
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="#home">About</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <div class="sidebar-footer">
+            <a class="social" href="https://linkedin.com/in/kadenzhu" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="social" href="https://github.com/1kaden" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+            <a class="social" href="mailto:1kaden@berkeley.edu" aria-label="Email">@</a>
+        </div>
+    </aside>
+
+    <main class="content">
+        <section id="home" class="hero section reveal">
+            <h1 class="title"><span class="title-light">KADEN</span> ZHU</h1>
+            <p class="subtitle-lg">Los Angeles, CA · 1kaden@berkeley.edu · (626) 537-7284</p>
+            <p class="lead">I'm a Rising Senior at UC Berkeley Majoring in Data Science and Minoring in Statistics. I hold experience building data products, ML systems, and operational analytics. I love turning ambiguous problems into shipped features and clear business and strategic outcomes.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#projects">View Projects</a>
+                <a class="btn" href="resume.html">View Resume</a>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <article class="project-card reveal">
+                    <h3 class="project-title">Doji Stock Helper (Streamlit)</h3>
+                    <p class="project-desc">A Streamlit app that assists traders with Doji candlestick analysis and daily gap scanning. Built for quick pattern discovery and decision support.</p>
+                    <ul class="tags">
+                        <li>Python</li><li>pandas</li><li>Streamlit</li><li>Plotly</li>
+                    </ul>
+                    <div class="actions">
+                        <a class="btn small" href="https://github.com/1kaden/Doji-Stock-Helper-Page" target="_blank" rel="noopener">Repository</a>
+                        <a class="btn small outline" href="https://dojigapscan.streamlit.app/" target="_blank" rel="noopener">Live App</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <h3 class="project-title">Interactive World Generation Game</h3>
+                    <p class="project-desc">2D tile-based world exploration engine with procedural generation, avatar control, deterministic replays, and save/load state. Built as part of UC Berkeley's CS 61B BYOW.</p>
+                    <ul class="tags">
+                        <li>Java</li><li>Algorithms</li><li>Game Engine</li>
+                    </ul>
+                    <div class="actions">
+                        <a class="btn small" href="https://github.com/1kaden/Interactive-World-Gen" target="_blank" rel="noopener">Repository</a>
+                        <a class="btn small outline" href="https://github.com/1kaden/Interactive-World-Gen/releases/tag/Game" target="_blank" rel="noopener">Release</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <h3 class="project-title">Cook County Housing Price + Tax Fairness</h3>
+                    <p class="project-desc">Predictive modeling of property values with fairness analysis of assessment bias across communities. Includes feature engineering, ML baselines, and interpretable reporting.</p>
+                    <ul class="tags">
+                        <li>Python</li><li>scikit-learn</li><li>pandas</li><li>Bias/Fairness</li><li>Exploratory Data Analysis</li><li>Operations Effectiveness Analysis</li>
+                    </ul>
+                    <div class="actions">
+                        <a class="btn small" href="https://github.com/1kaden/Cook-County-Housing-Price-Prediction-Tax-Fairness-Analysis" target="_blank" rel="noopener">Repository</a>
+                        <a class="btn small outline" href="https://github.com/1kaden/Cook-County-Housing-Price-Prediction-Tax-Fairness-Analysis/blob/main/projA2.ipynb" target="_blank" rel="noopener">Notebook</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="item reveal">
+                    <div class="when">Jul 2025 – Present · Baltimore, MD</div>
+                    <div class="what">Operations & Data Insights Manager · Youphoria</div>
+                    <ul>
+                        <li>Led operations across Tech, Product, Marketing, and Data; prioritized work in fast-paced environments.</li>
+                        <li>Designed SQL/Python pipelines and A/B experiments; improved engagement by +22% CTR.</li>
+                        <li>Delivered KPI dashboards for executive decision-making and operational visibility.</li>
+                        <li>Coordinated cross-functional initiatives with clear technical and strategic communication.</li>
+                    </ul>
+                </div>
+                <div class="item reveal">
+                    <div class="when">Jun 2019 – Present · Berkeley, CA</div>
+                    <div class="what">Founder & Lead Data Engineer · Yuppy Inc</div>
+                    <ul>
+                        <li>Maintained production ETL on Airflow/PostgreSQL with monitoring and alerting.</li>
+                        <li>Built ML models (TensorFlow, scikit-learn, Transformers) improving accuracy by 30%+.</li>
+                        <li>Exposed services through FastAPI; containerized with Docker/Kubernetes to speed releases by 70%.</li>
+                        <li>Drove delivery under tight deadlines while aligning product and operational needs.</li>
+                    </ul>
+                </div>
+                <div class="item reveal">
+                    <div class="when">May 2021 – Aug 2021 · Los Angeles, CA</div>
+                    <div class="what">Data Research & Outreach Analyst · California Department of Public Health</div>
+                    <ul>
+                        <li>Performed statistical and regression analysis; increased campaign effectiveness by 28%.</li>
+                        <li>Built Tableau/ArcGIS dashboards; reduced operational inefficiencies by 19%.</li>
+                        <li>Delivered accessible presentations to 1,500+ students; aligned stakeholders with data stories.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section reveal">
+            <h2 class="section-title">Education</h2>
+            <div class="edu">
+                <div class="degree">B.S. Data Science · Minor in Statistics</div>
+                <div class="where">University of California, Berkeley · GPA 3.79 (Aug 2023 – May 2027)</div>
+                <div class="coursework">Relevant Coursework: Econometrics, Data Structures, Business Communication</div>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+          
+              <div class="skills-col">
+                <h3>Programming & Data</h3>
+                <ul>
+                  <li>Python, SQL, Java, JavaScript, HTML/CSS</li>
+                  <li>Data manipulation & analysis with pandas, NumPy, Matplotlib</li>
+                  <li>Database management (PostgreSQL), query optimization</li>
+                </ul>
+              </div>
+          
+              <div class="skills-col">
+                <h3>Machine Learning & Analytics</h3>
+                <ul>
+                  <li>scikit-learn, TensorFlow, PyTorch, Transformers</li>
+                  <li>Time-Series Forecasting, Principal Component Analysis (PCA)</li>
+                  <li>A/B Testing, Experimental Design, Predictive Modeling</li>
+                  <li>Bias testing, statistical analysis, data visualization</li>
+                </ul>
+              </div>
+          
+              <div class="skills-col">
+                <h3>Frameworks & Platforms</h3>
+                <ul>
+                  <li>FastAPI, Flask, Streamlit (interactive dashboards)</li>
+                  <li>Airflow (ETL pipelines), Docker, Kubernetes, AWS (cloud deploys)</li>
+                  <li>Tableau, ArcGIS (data dashboards & geospatial analysis)</li>
+                </ul>
+              </div>
+          
+              <div class="skills-col">
+                <h3>Business & Communication</h3>
+                <ul>
+                  <li>Project management & process improvement</li>
+                  <li>Cross-functional collaboration & stakeholder engagement</li>
+                  <li>Executive presentations & reporting</li>
+                  <li>Advanced Excel (pivot tables, lookups, statistical functions)</li>
+                </ul>
+              </div>
+          
+            </div>
+          </section>
+
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">Contact</h2>
+            <p>Best ways to reach me:</p>
+            <ul class="contact">
+                <li>Email: <a href="mailto:1kaden@berkeley.edu">1kaden@berkeley.edu</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/kadenzhu" target="_blank" rel="noopener">linkedin.com/in/kadenzhu</a></li>
+                <li>GitHub: <a href="https://github.com/1kaden" target="_blank" rel="noopener">github.com/kadenzhu</a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <div>© <span id="year"></span> Kaden Zhu</div>
+        </footer>
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume | Kaden Zhu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Paper + margins similar to provided LaTeX */
+        :root { --ink:#111; --muted:#444; }
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
+        body { margin: 0; padding: 24px; color: var(--ink); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+        .toolbar { display:flex; justify-content:flex-end; max-width: 8.5in; margin: 0 auto 8px; }
+        .print-btn { border: 1px solid #bbb; background: #fafafa; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        @media print { .toolbar { display:none; } }
+
+        .page { width: 8.5in; min-height: 11in; background: white; margin: 0 auto; padding: 0.75in 0.5in; }
+
+        /* Heading */
+        .heading { text-align: center; }
+        .name { font-size: 26px; font-variant: small-caps; font-weight: 700; letter-spacing: 0.5px; margin: 0; }
+        .links { margin-top: 4px; font-size: 12px; }
+        .links a { color: inherit; text-decoration: underline; }
+
+        /* Sections */
+        .section { margin-top: 16px; }
+        .section-title { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 6px; font-weight: 700; }
+        .rule { height: 1px; background: #000; margin: 4px 0 4px; }
+
+        /* Two-line subheading with right-aligned meta */
+        .row { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: baseline; }
+        .org { font-weight: 700; }
+        .meta { color: var(--muted); font-style: italic; font-size: 12px; }
+        .role { font-style: italic; font-size: 12px; color: var(--muted); }
+
+        ul { margin: 4px 0 6px 18px; padding: 0; }
+        ul li { margin: 2px 0; font-size: 13px; }
+
+        .skills { font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="toolbar"><button class="print-btn" onclick="window.print()">Print / Save as PDF</button></div>
+    <div class="page">
+        <div class="heading">
+            <h1 class="name">Kaden Zhu</h1>
+            <div class="links">
+                (626) 537-7284 | <a href="mailto:1kaden@berkeley.edu">1kaden@berkeley.edu</a> |
+                <a href="https://www.linkedin.com/in/kadenzhu" target="_blank" rel="noopener">linkedin.com/in/kadenzhu</a> |
+                <a href="https://github.com/kadenzhu" target="_blank" rel="noopener">github.com/kadenzhu</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="rule"></div>
+            <div class="row">
+                <div class="org">University of California, Berkeley</div>
+                <div class="meta">Berkeley, CA</div>
+            </div>
+            <div class="row">
+                <div class="role">B.S. in Data Science; Minor in Statistics; GPA: 3.79</div>
+                <div class="role">Aug. 2023 – May 2027</div>
+            </div>
+            <div class="role">Relevant Coursework: Econometrics, Data Structures, Business Communication</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Experience</div>
+            <div class="rule"></div>
+
+            <div class="row">
+                <div class="org">Youphoria</div>
+                <div class="meta">Jul. 2025 – Present</div>
+            </div>
+            <div class="row">
+                <div class="role">Operations & Data Insights Manager</div>
+                <div class="role">Baltimore, MD</div>
+            </div>
+            <ul>
+                <li>Led daily operations across Tech, Product, Marketing, and Data; managed priorities in a fast-paced, cross-functional environment.</li>
+                <li>Designed and shipped SQL/Python pipelines; ran statistical testing and A/B experiments to improve engagement (+22% CTR).</li>
+                <li>Built KPI dashboards and reports to improve visibility and decision-making at the leadership level.</li>
+                <li>Directed cross-functional teams applying business analysis and process improvement to streamline workflows.</li>
+                <li>Communicated technical and strategic insights clearly to executives and teams.</li>
+            </ul>
+
+            <div class="row">
+                <div class="org">Yuppy Inc</div>
+                <div class="meta">Jun. 2019 – Present</div>
+            </div>
+            <div class="row">
+                <div class="role">Founder & Lead Data Engineer</div>
+                <div class="role">Berkeley, CA</div>
+            </div>
+            <ul>
+                <li>Built and maintained high-reliability ETL systems (Airflow, PostgreSQL) with monitoring and alerting.</li>
+                <li>Developed ML models (TensorFlow, scikit-learn, Transformers) for forecasting and NLP, improving accuracy by 30%+.</li>
+                <li>Exposed services through FastAPI and containerized workflows with Docker/Kubernetes, reducing release cycles by 70%.</li>
+                <li>Managed multiple priorities and delivered complex data engineering projects under tight deadlines.</li>
+                <li>Collaborated across functions to integrate business and technical perspectives into process improvements.</li>
+            </ul>
+
+            <div class="row">
+                <div class="org">California Department of Public Health</div>
+                <div class="meta">May 2021 – Aug. 2021</div>
+            </div>
+            <div class="row">
+                <div class="role">Data Research & Outreach Analyst</div>
+                <div class="role">Los Angeles, CA</div>
+            </div>
+            <ul>
+                <li>Conducted statistical and regression analysis to evaluate outreach programs; increased campaign effectiveness by 28%.</li>
+                <li>Designed Tableau and ArcGIS dashboards targeting underserved communities, reducing inefficiencies by 19%.</li>
+                <li>Delivered data-driven presentations to 1,500+ students, translating complex analysis into accessible insights.</li>
+                <li>Coordinated outreach, analytics, and reporting; adapted to shifting hybrid environments.</li>
+                <li>Aligned teams and stakeholders on data-driven strategies with clear, accessible communication.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <div class="rule"></div>
+            <div class="role"><strong>Clark County Housing Price Model</strong> — pandas, scikit-learn, matplotlib</div>
+            <ul>
+                <li>Cleaned/engineered 100k+ records; trained regression and gradient boosting models.</li>
+                <li>Conducted bias testing across ZIP codes; reduced prediction bias by 12%; delivered clear, actionable report.</li>
+            </ul>
+            <div class="role"><strong>Window Washing Operations App</strong> — CRUD Web App, SQL, Google Maps API</div>
+            <ul>
+                <li>Developed scheduling and routing with route optimization; cut travel time by 25%.</li>
+                <li>Improved operational effectiveness via KPI tracking and streamlined assignments.</li>
+            </ul>
+            <div class="role"><strong>Multi-Modal Review Sentiment Dashboard</strong> — BERT, ResNet, PyTorch, Streamlit</div>
+            <ul>
+                <li>Integrated text + image analysis on 50k+ reviews; reduced prediction RMSE by 15%.</li>
+                <li>Built an interactive dashboard enabling stakeholder drilldowns on sentiment and features.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="rule"></div>
+            <div class="skills">
+                <div><strong>Languages</strong>: Python, SQL, Java, JavaScript, HTML/CSS</div>
+                <div><strong>Business Tools</strong>: Microsoft Excel (pivot tables, lookups, statistical functions), PowerPoint, Teams</div>
+                <div><strong>Machine Learning</strong>: scikit-learn, TensorFlow, PyTorch, Transformers, Time-Series Forecasting, PCA, A/B Testing, AWS, CI/CD, PostgreSQL, pandas, NumPy, Matplotlib</div>
+                <div><strong>Frameworks/Tools</strong>: FastAPI, Flask, Airflow, Tableau, ArcGIS, Docker, Kubernetes, Streamlit, Git</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
